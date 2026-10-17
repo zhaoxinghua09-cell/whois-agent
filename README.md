@@ -31,16 +31,18 @@ One collection, eight LGD-governed sub-skills, one identity lifecycle — **Regi
 
 ### Sub-skill index (referenced by slug — no implementation copied)
 
-| slug | stage | dl | LGD | package |
-|------|------|---:|-----|---------|
-| agent-boarding-pass | register | 92 | 有籍 | [modelscope](https://modelscope.cn/skills/StevenZhao26/agent-boarding-pass) |
-| agent-memory-keeper | remember | 96 | 有证 | [modelscope](https://modelscope.cn/skills/StevenZhao26/agent-memory-keeper) |
-| session-continuity-protocol | remember | 59 | 三律 | [modelscope](https://modelscope.cn/skills/StevenZhao26/session-continuity-protocol) |
-| context-engineering | remember | 92 | 三律 | [modelscope](https://modelscope.cn/skills/StevenZhao26/context-engineering) |
-| verified-agent-identity ★ | verify | 330 | 有籍 | [modelscope](https://modelscope.cn/skills/StevenZhao26/verified-agent-identity) |
-| agent-loop-guard | verify | 94 | 有门禁 | [modelscope](https://modelscope.cn/skills/StevenZhao26/agent-loop-guard) |
-| agent-output-registry | output | 141 | 有籍 | [modelscope](https://modelscope.cn/skills/StevenZhao26/agent-output-registry) |
-| agent-evolution | evolve | 109 | 三律 | [modelscope](https://modelscope.cn/skills/StevenZhao26/agent-evolution) |
+| slug | stage | dl | LGD |
+|------|------|---:|-----|
+| agent-boarding-pass | register | 92 | 有籍 |
+| agent-memory-keeper | remember | 96 | 有证 |
+| session-continuity-protocol | remember | 59 | 三律 |
+| context-engineering | remember | 92 | 三律 |
+| verified-agent-identity ★ | verify | 330 | 有籍 |
+| agent-loop-guard | verify | 94 | 有门禁 |
+| agent-output-registry | output | 141 | 有籍 |
+| agent-evolution | evolve | 109 | 三律 |
+
+> Each sub-skill is published independently on the public model registry; install it there by slug. Lineage SSOT: `skills_registry.toml`.
 
 ### Install matrix
 
