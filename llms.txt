@@ -1,0 +1,27 @@
+# WhoIs agent · Identity & Memory Suite (whois-agent)
+
+> One install that answers **who your agent is**, remembers everything across sessions, verifies its identity, and registers every output. A lifecycle-anchored suite over 8 LGD-governed sub-skills: Register → Remember → Verify → Output → Evolve.
+
+`whois-agent` is an Agent Skill collection. It references 8 sub-skills by slug and copies none of their implementations — they are published independently on the public model registry. Bilingual (English-first / 中文).
+
+## Core
+
+- [SKILL.md](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/SKILL.md): skill main file (YAML frontmatter + read_when triggers)
+- [README.md](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/README.md): pipeline diagram, sub-skill index, install matrix, evidence bars
+- [scripts/whois_route.py](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/scripts/whois_route.py): route a request to the right sub-skill slug
+- [references/subpackage-index.md](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/references/subpackage-index.md): slug index and where each sub-skill installs
+
+## Install
+
+- [install.sh](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/install.sh): one-shot installer (macOS / Linux)
+- [install.ps1](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/install.ps1): one-shot installer (Windows PowerShell)
+- [package.json](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/package.json): package metadata (name / version / author / license / keywords)
+
+## Optional
+
+- [AGENTS.md](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/AGENTS.md): working guide for AI agents
+- [llms-full.txt](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/llms-full.txt): full text for long-context models
+- [SECURITY.md](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/SECURITY.md): security policy
+- [CONTRIBUTING.md](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/CONTRIBUTING.md): contribution guide
+- [README.en.md](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/README.en.md): English version
+- [LICENSE](https://github.com/zhaoxinghua09-cell/whois-agent/blob/main/LICENSE): MIT

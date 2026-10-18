@@ -79,6 +79,48 @@ Claude Code / Codex / Cursor / 任意 agent 见上方命令；一键脚本 `inst
 
 8 包 **有籍/有证/有门禁 全绿 8/8**（2026-10-17 看板实读）；累计模型仓下载 **1,013**；血缘 SSOT 为 113 包 `skills_registry.toml`，每个 slug 可溯。
 
+## 仓库结构 / Repository layout
+
+```text
+whois-agent/
+├── SKILL.md              # 技能主文件（Agent Skills 规范 · YAML frontmatter）
+├── package.json          # 包元数据（name / version / author / license / keywords）
+├── install.sh            # 一键安装（macOS / Linux）
+├── install.ps1           # 一键安装（Windows PowerShell）
+├── scripts/whois_route.py # 按 slug 把请求路由到对应子技能
+├── references/subpackage-index.md  # 8 个子技能的 slug 索引与安装位置
+├── .claude-plugin/ .codex-plugin/ .cursor-plugin/  # 各 Agent 运行时插件清单
+├── openclaw.plugin.json  # OpenClaw 插件清单
+├── README.md             # 本文件（双语）
+└── llms.txt / llms-full.txt / AGENTS.md / SECURITY.md
+```
+
+每个子技能以 slug 引用、实现独立发布在公开模型仓；本合集**不复制任何子包实现**，只做编排、管线图与证据条。
+
+## 触发词 / When to use
+
+- 跨会话失忆、开局不知上轮做了什么（session continuity）
+- 智能体身份漂移、需要一张可核验的身份卡（verified identity）
+- 要求每一次 AI 产出都留痕可溯（output registry）
+- 把记忆、上下文预算、循环护栏当作一整套来治理（one suite）
+
+```text
+触发词示例：who is my agent / 跨会话记忆 / 身份核验 / 产出留痕 / anti-drift identity / memory lifecycle
+```
+
+## 安全 / Security
+
+如发现脚本存在危险行为、子技能索引指向错误目标或插件清单泄漏敏感信息，请按 [`SECURITY.md`](SECURITY.md) 的方式私下报告，不要在公开 issue 中披露。
+
+## License / 许可
+
+本合集以 **MIT 许可证**发布，版权声明原文如下（未修改）：
+
+> MIT License — Copyright (c) 2026 XLGD · SynomosAI
+
+完整条款见仓库根目录 [LICENSE](LICENSE)。引用时请标注仓库名与链接
+`https://github.com/zhaoxinghua09-cell/whois-agent`。各子技能以其各自独立许可证为准。
+
 ---
 
 *Governance-as-a-Service · LGD-Core v0.2 · XLGD · SynomosAI · 本合集零改动子包实现。*

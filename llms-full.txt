@@ -1,0 +1,57 @@
+# WhoIs agent · Identity & Memory Suite (whois-agent) — Full Text
+
+This is the "full" companion to llms.txt, for long-context models.
+
+## What this is
+
+WhoIs agent is a lifecycle-anchored orchestration suite over 8 LGD-governed
+sub-skills. It references each sub-skill by slug and copies none of their
+implementations — they are published independently on the public model registry.
+It narrates one identity lifecycle: Register → Remember → Verify → Output, with an
+Evolution loop feeding improvement back into memory.
+
+One sentence: one install that answers who your agent is, remembers everything
+across sessions, verifies its identity, and registers every output.
+
+## The five stages
+
+1. **Register** — `agent-boarding-pass` (boarding pass / onboarding).
+2. **Remember** — `agent-memory-keeper`, `session-continuity-protocol`,
+   `context-engineering` (long-term memory, cross-session continuity, context budget).
+3. **Verify** — `verified-agent-identity` (flagship, anti-drift identity card),
+   `agent-loop-guard` (loop safety).
+4. **Output** — `agent-output-registry` (every output registered & traceable).
+5. **Evolve** — `agent-evolution` (writes improvements back to memory).
+
+## Quick start
+
+```bash
+git clone https://github.com/zhaoxinghua09-cell/whois-agent
+cd whois-agent
+bash install.sh        # or: powershell -File install.ps1
+```
+
+Or per-agent:
+
+```bash
+claude plugin install whois-agent@claude-plugins   # Claude Code
+cp -r . ~/.codex/whois-agent                       # Codex
+cp -r . ~/.cursor/whois-agent                      # Cursor
+```
+
+## Trigger words
+
+who is my agent / cross-session memory / verified identity card / anti-drift /
+output registry / session continuity / context budget / agent memory lifecycle /
+跨会话记忆 / 身份核验 / 产出留痕.
+
+## Boundaries
+
+- This repo is an orchestration/collection layer; sub-skill implementations live in
+  their own packages and carry their own licenses.
+- No sub-package implementation is vendored or modified here.
+
+## License & rights
+
+MIT. Copyright (c) 2026 XLGD · SynomosAI. Full terms in `LICENSE`.
+Contact: zhaoxinghua09@gmail.com ｜ ORCID 0009-0001-0512-1237.
